@@ -1,0 +1,106 @@
+@import "../../index.scss";
+
+// CLASSES
+
+.bg-login {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/images/fundo-amarelo.jpeg");
+  background-size: cover;
+  background-position: center;
+
+  @include flexCenter();
+}
+
+.box-login {
+  width: 60%;
+  height: 80vh;
+  background-color: #242424;
+  border-radius: 10px;
+
+  @include flexBetween();
+}
+
+.lado-esquerdo-login {
+  background-color: #121212;
+  width: 49.9%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+
+  @include flexCenter;
+}
+
+.lado-direito-login {
+  background-color: #121212;
+  width: 49.9%;
+  height: 100%;
+
+  border-radius: 0 10px 10px 0;
+
+  @include flexCenter;
+  flex-direction: column;
+}
+
+.container-forms-login {
+  background-color: #242424;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.title-login {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.input-login {
+  background-color: transparent;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+.cta-login {
+  margin-top: 40px;
+  background-color: #fcbd0d;
+
+  border-radius: 4px;
+  cursor: pointer;
+  color: #000000;
+  padding: 8px 30px;
+  font-weight: 500;
+
+  @include flexCenter;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}
+
+.ou {
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.cadastre-se {
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 14px;
+
+  &:hover {
+    color: #fcbd0d;
+    transform: scale(1.01);
+  }
+}
+
+.digital-eazy{
+  font-size: 48px;
+  color: #ffffff;
+  font-weight: 600;
+}

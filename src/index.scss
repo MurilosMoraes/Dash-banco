@@ -1,0 +1,113 @@
+// Tamanhos de tela
+$small: 375px;
+$medium: 720px;
+$large: 1280px;
+$navbar-height: 90px;
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f3f6f9;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* SCSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+// IMPORT FONT
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+// VARIÁVEIS
+
+$radius: 4px;
+
+$yellow: #fcbd0d;
+$black: #202020;
+$white: #ffffff;
+
+// FUNÇÕES
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexStart() {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin flexBetween() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flexAround() {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
